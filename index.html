@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>RGB to Hex Converter</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container mt-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="red" style="color: black; background: red; font-weight: bold;">
+          <span class="col-2">R</span>
+        </div>
+        <div class="colorRange">
+          <input type="range" class=" offset-1" id="redRange" step="1" min="0" max="255" value="0">
+        </div>
+        <div class="redLabel" style="color: red; font-weight: bold;">
+          <span class="col-2 offset-6" id="red" style="color: black; background: red; font-weight: bolder;">0</span>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="green" style="color: black; background: green; font-weight: bold;">
+          <span class="col-2">G</span>
+        </div>
+        <div class="colorRange">
+          <input type="range" class=" offset-1" id="greenRange" min="0" max="255" value="0">
+        </div>
+        <div class="greenLabel" style="color: green;">
+          <span class="col-2 offset-6" id="green" style="color: black; background: green; font-weight: bolder;">0</span>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="blue" style="color: black; background: blue; font-weight: bold;">
+          <span class="col-2">B</span>
+        </div>
+        <div class="colorRange">
+          <input type="range" class=" offset-1" id="blueRange" min="0" max="255" value="0">
+        </div>
+        <div class="blueLabel" style="color: blue;">
+          <span class="col-2 offset-6" id="blue" style="color: black; background: blue; font-weight: bolder;">0</span>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="label" id="label" style="font-size: 50px; background: rgba(248, 242, 242, 0.5);">#000000</div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
